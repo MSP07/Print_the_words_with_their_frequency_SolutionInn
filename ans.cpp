@@ -63,7 +63,7 @@ pair<string,int>quickSelect(vector<pair<string,int>> &arr,int low,int high,int k
     return {"", -1};
 }
 
-pair<string,int>usingQuickSelectQuickSelect(const map<string,int> &frequencies,int k){
+pair<string,int>usingQuickSelect(const map<string,int> &frequencies,int k){
     vector<pair<string,int>>wordFreq(frequencies.begin(),frequencies.end());
     return quickSelect(wordFreq,0,wordFreq.size()-1,k-1); 
 }
